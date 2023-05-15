@@ -1,0 +1,276 @@
+/* 64em is also 1028px (if base-font is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    .main-container, header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+/*----------- BODY --------------*/
+
+body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+.active {
+    margin-left: 20px;
+}
+
+/*----------- MAIN --------------*/
+/* home grid styles */
+
+main h2 {
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+}
+
+main h2, p, img {
+    margin-left: 0.5rem;
+}
+
+main div {
+    margin-bottom: 0.5rem;
+    padding: 0.2rem;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:1rem;
+    justify-content: center;
+    /* border: 2px solid black;  */
+}
+
+.home-grid div {
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+.banner-image-section {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    width:auto;
+    height: auto;
+    padding-top: 2rem;
+    margin-bottom: -5rem;
+    /* border: 2px solid black; */
+}
+
+.upgrades {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width:500px;
+    height: 350px;
+    /* border: 2px solid black; */
+}
+
+.reviews {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    width:480px;
+    height: 350px;
+    /* border: 2px solid black; */
+}
+
+/* End of home grid styles */
+
+/* Upgrade container styles */
+.upgrades-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+
+.each-upgrade {
+    width:220px;
+    height:auto;
+}
+
+.each-upgrade p {
+   text-align: center;
+   font-size: 1rem;
+   margin:-9px 0 0 0;
+}
+
+.each-image {
+    display: flex;
+    justify-content: center;
+    background-color: #4C96D7;
+    margin:.5rem;
+    padding:.5rem;
+}
+
+.each-image img {
+    width:65px;
+    height:65px;
+}
+/* End of upgrade styles */
+
+main figure {
+    margin-left: 0;
+}
+
+/* css for the information inside the hero banner image */
+.information {
+    width:200px;
+    height:240px;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 250px;
+    right: 920px;
+    padding: 1rem;
+}
+
+.information p {
+    margin-bottom: 2.5rem;
+}
+
+.information a:hover {
+    background-color: #A6CBEB;
+}
+
+.inside-button {
+    width:150px;
+}
+
+/*----------- END OF MAIN --------------*/
+
+
+/*----------- FOOTER --------------*/
+/*----------- END OF FOOTER --------------*/
+
+
+/* LOGIN PAGE  SPECIFIC STYLES */
+
+/*-----------start of form styles --------------*/
+.form-information {
+    width:420px;
+    height: auto;
+}
+/*-----------end of form styles --------------*/
+
+/* END OF LOGIN PAGE  SPECIFIC STYLES */
+
+ul.clientReviews {
+    margin-left: 1.3rem;
+}
+
+.clientReviews li {
+    margin-left: -0.5rem;
+    margin-bottom: 0.7rem;
+    /* border: 2px solid red; */
+}
+
+.first-part-text {
+    margin-right: -7rem;
+    flex: 4;
+}
+
+.second-part-text {
+    flex: 2;
+}
+
+
+/* START OF VEHICLE-DETAIL PAGE SPECIFIC STYLES */
+
+/* Single vehicle grid  */
+
+.vehicle-detail-grid ul {
+    list-style-type: none;
+}
+
+.vehicle-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:.5rem;
+    width:auto;
+    justify-content: center;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    /* border: 2px solid red; */
+} 
+
+.thumbnail-images {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width:100px;
+    height:300px;
+    margin:0;
+    /* border:2px solid red;  */
+}
+
+.vehicle-image {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    width:400px;
+    height: 300px;
+    box-shadow: none;
+    /* border: 2px solid black;   */
+} 
+
+.vehicle-bottom-information {
+    grid-column: 5 / 8;
+    grid-row: 1 / 2;
+    width: 450px;
+    margin-top: -3rem;
+    padding: 1rem;
+    border-radius: 5px;
+     /* border:2px solid orangered; */
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+.vehicle-detail-grid figure figcaption h2 {
+    color: #1573B7;
+    font-size: 1.5rem;
+}
+
+/* Responsive image styles */
+.vehicle-detail-grid figure {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+} 
+
+.vehicle-detail-grid figure img {
+    max-height:300px;
+}
+
+.thumbnail-images figure {
+    width: 100px;
+    margin-right: 1rem;
+    padding-bottom: 0.5rem;
+} 
+
+.thumbnail-images figure img {
+    width: 130px;
+    margin-left: -1rem;
+    max-height: 100px;
+    /* border: 2px solid blue; */
+}
+/* End of Responsive image styles */
+
+/* End of single vehicle grid  */
+
+.vehicle-detail-grid figure {
+        margin-left: 0;
+} 
+
+/* END OF VEHICLE-DETAIL PAGE SPECIFIC STYLES */
+
+
+/* START OF REVIEW HALF BOTTOM PAGE ON VEHICLE DETAIL PAGE PAGE  SPECIFIC STYLES */
+
+.reviewButton {
+    margin-left: 1.5rem;
+}
+  
+
+
+
+
+} /* end of media query */

@@ -1,0 +1,11 @@
+CLIENT
+Email: neilriley@gmail.com
+Password: 1234Y%qqq
+
+
+
+ADMIN
+Firstname: Admin
+Lastname: User
+Email: admin@cse340.net
+Password: Sup3rU$er
